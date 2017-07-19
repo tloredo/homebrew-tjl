@@ -30,7 +30,8 @@ class Upprint < Formula
 
     # The getopt provided by OS X is not the enhanced version; lprwrap
     # thus should use its "dumb" option parsing rather than getopt.
-    inreplace 'lprwrap/lprwrap.in', '[ "$HAVE_getopt" ]', '[ "$HAVE_getopt" ] &&  [ "${OSTYPE//[0-9.]/}" != "darwin" ]'
+    # Comment this if using brew's gnu-getopt.
+    # inreplace 'lprwrap/lprwrap.in', '[ "$HAVE_getopt" ]', '[ "$HAVE_getopt" ] &&  [ "${OSTYPE//[0-9.]/}" != "darwin" ]'
 
     system "./configure", *args
     system "make install"
