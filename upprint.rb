@@ -7,7 +7,7 @@ class Upprint < Formula
   homepage 'http://www.mathstat.dal.ca/~selinger/upprint/'
   url 'http://www.mathstat.dal.ca/~selinger/upprint/download/upprint-1.7.tar.gz'
   version '1.7'
-  sha1 'f8bdf12e154337c66a6c70d307af1867fbdb9818'
+  sha256 '70dd3e38316601d09872ed88995ef8ea906dedc16a28f21ab2533111eb6310f3'
 
   option 'enable-a4', 'Use A4 as default page size'
   option 'enable-metric', 'Use metric units'
